@@ -1,14 +1,25 @@
-<!--<h1>Hello {{alumnos}}</h1>
-  <h2> Y el número de la suerte es: {{ numeroDeLaSuerte}} </h2>
-  <textarea [rows]="textAreaLineas"></textarea>
-  <div [class.caja]="pintamosClase"></div>
-  <div [ngClass]="clases"></div>
-  <p [style.color]="obtenerColor()">buenos dias</p>
-  <p [ngStyle]="obtenerEstilos()">buenas tardes</p>
-  <button (click)="mostrarMensaje()">Mostrar mensaje</button>
-  <input [(ngModel)]="mensaje" type="text"/>
-  {{mensaje}}-->
+ <!--<ejemplos-binding></ejemplos-binding>
+ <ejemplos-componentes></ejemplos-componentes>-->
 
-  <ejemplos-binding></ejemplos-binding>
+<div class="container">
 
-  <ejemplos-componentes></ejemplos-componentes>
+    <!--Titulo-->
+
+    <header>
+        <h1>Mi agenda</h1>
+    </header>
+
+
+
+
+
+    <!--Coleccion de contactos-->
+    <lista-contactos [contactos]="listaContactos"
+                (seleccionado) = "mostrarDetalles($event)"></lista-contactos>
+
+
+    <!--Detallles de contacto-->
+    <detalles-contacto [contacto]="contactoSeleccionado"></detalles-contacto>
+
+
+</div>
