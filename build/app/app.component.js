@@ -39,7 +39,7 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        templateUrl: './app.component.html',
+        templateUrl: '/app/app.component.html',
         styles: ["\n    .caja {\n      width: 50px;\n      height: 50px;\n      background-color: red;\n    } \n  "]
     }),
     __metadata("design:paramtypes", [])
