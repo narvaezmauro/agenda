@@ -9,7 +9,7 @@ import { EjemplosComponentesComponent } from './ejemplos/ejemplos-componentes.co
 import { ListaContactosComponent } from './lista-contactos/lista-contactos.component';
 import { ContactosService } from './servicios/contactos.service';
 import { DetallesContactoComponent } from './detalles-contacto/detalles-contacto.component';
-import { EjemplosInyeccionComponent, Servicio1, Servicio2 } from './ejemplos/ejemplos-inyeccion.componentes';
+import { EjemplosInyeccionComponent, Servicio1, Servicio2, Servicio2Provider } from './ejemplos/ejemplos-inyeccion.componentes';
 
 @NgModule({
   imports: [ // metemos todos los módulos que necesita mi app
@@ -27,7 +27,7 @@ import { EjemplosInyeccionComponent, Servicio1, Servicio2 } from './ejemplos/eje
   providers: [ // metemos los servicios
     ContactosService,   
     Servicio1, // este tiene @Injectable
-    Servicio2 
+    Servicio2Provider, 
      ],
   bootstrap: [ // componente raiz de nuestra app
     AppComponent ]

@@ -39,7 +39,7 @@ AppModule = __decorate([
         providers: [
             contactos_service_1.ContactosService,
             ejemplos_inyeccion_componentes_1.Servicio1,
-            ejemplos_inyeccion_componentes_1.Servicio2
+            ejemplos_inyeccion_componentes_1.Servicio2Provider,
         ],
         bootstrap: [
             app_component_1.AppComponent
