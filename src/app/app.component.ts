@@ -14,10 +14,13 @@ export class AppComponent implements OnInit {
     contactoSeleccionado: Contacto;
 
     constructor(private _contactosService: ContactosService) {}
-
+ 
     ngOnInit(): void{
 
-        this.listaContactos = this._contactosService.obtenerContactos();
+        this._contactosService.obtenerContactos()
+                              .subscribe(contactos => {
+                                  this.listaContactos=contactos;
+                              });
     }
 
     mostrarDetalles(contacto: Contacto): void{
@@ -27,10 +30,12 @@ export class AppComponent implements OnInit {
     navegarRuta(ruta: string){
         console.log('navegar',ruta);
         window.open(ruta, '_blank');
-
-    }
-
+    } 
+  
     guardarContacto(contacto: Contacto){
-        console.log(contacto);
+        this._contactosService.guardarContacto(contacto)
+                              .subscribe(contacto => {
+                                  this.listaContactos.push(contacto);
+                              });
     }
 }

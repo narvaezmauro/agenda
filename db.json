@@ -1,0 +1,22 @@
+{
+  "contactos": [
+    {
+      "nombre": "Tim",
+      "apellidos": "Cook",
+      "email": "tim.cook@gmail.com",
+      "telefono": 648265329,
+      "twitter": "TimCook",
+      "facebook": "TimCook",
+      "id": 1
+    },
+    {
+      "nombre": "Rober",
+      "apellidos": "Moreno",
+      "email": "rober.moreno@babel.es",
+      "telefono": 648521789,
+      "twitter": "RoberMoreno",
+      "facebook": "RoberMoreno",
+      "id": 2
+    }
+  ]
+}
