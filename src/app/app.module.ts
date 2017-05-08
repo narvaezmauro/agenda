@@ -13,6 +13,9 @@ import { DetallesContactoComponent }    from './detalles-contacto/detalles-conta
 import { EjemplosInyeccionComponent,
    Servicio1, Servicio2Provider }       from './ejemplos/ejemplos-inyeccion.componentes';
 import { FormularioContactoComponent }  from './formulario-contacto/formulario-contacto.component';
+import { MisContactosComponent}         from './mis-contactos/mis-contactos.component';
+import { NuevoContactoComponent }       from './nuevo-contacto/nuevo-contacto.component';
+import { AppRoutingModule }             from './app-routing.module';
 
 
 
@@ -20,7 +23,8 @@ import { FormularioContactoComponent }  from './formulario-contacto/formulario-c
   imports: [ // metemos todos los módulos que necesita mi app
     BrowserModule,
     FormsModule,
-    HttpModule, ],
+    HttpModule,
+    AppRoutingModule ],
   declarations: [ // metemos todos los componenetes, directivas y pipes
     AppComponent,
     CajaComponent,
@@ -30,6 +34,8 @@ import { FormularioContactoComponent }  from './formulario-contacto/formulario-c
     DetallesContactoComponent,
     EjemplosInyeccionComponent,
     FormularioContactoComponent,
+    MisContactosComponent,
+    NuevoContactoComponent
      ],
   providers: [ // metemos los servicios
     ContactosService,   

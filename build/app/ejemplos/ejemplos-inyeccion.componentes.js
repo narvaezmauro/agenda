@@ -45,7 +45,7 @@ var EjemplosInyeccionComponent = (function () {
 EjemplosInyeccionComponent = __decorate([
     core_1.Component({
         selector: 'ejemplos-inyeccion',
-        templateUrl: '/app/ejemplos/ejemplos-inyeccion.componentes.html'
+        templateUrl: 'app/ejemplos/ejemplos-inyeccion.componentes.html'
     }),
     __metadata("design:paramtypes", [Servicio1,
         Servicio2])
