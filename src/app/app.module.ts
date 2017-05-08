@@ -16,6 +16,8 @@ import { FormularioContactoComponent }  from './formulario-contacto/formulario-c
 import { MisContactosComponent}         from './mis-contactos/mis-contactos.component';
 import { NuevoContactoComponent }       from './nuevo-contacto/nuevo-contacto.component';
 import { AppRoutingModule }             from './app-routing.module';
+import { ContactosResolve } from './servicios/contactos-resolve.service';
+import { Direcciones, ProveedorDirecciones } from './configuracion/direcciones';
 
 
 
@@ -41,6 +43,8 @@ import { AppRoutingModule }             from './app-routing.module';
     ContactosService,   
     Servicio1, // este tiene @Injectable
     Servicio2Provider, 
+    ContactosResolve,
+    ProveedorDirecciones
      ],
   bootstrap: [ // componente raiz de nuestra app
     AppComponent ]

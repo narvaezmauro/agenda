@@ -26,6 +26,36 @@
       "twitter": "TimCook",
       "facebook": "TimCook",
       "id": 3
+    },
+    {
+      "nombre": "asg",
+      "apellidos": "aasg",
+      "email": "asg",
+      "telefono": 3562,
+      "twitter": "<zg",
+      "facebook": "xn",
+      "avatar": "",
+      "id": 4
+    },
+    {
+      "nombre": "Rober",
+      "apellidos": "Moreno",
+      "email": "rober@babel.es",
+      "telefono": 618247953,
+      "twitter": "ErRober",
+      "facebook": "ErRober",
+      "avatar": "",
+      "id": 5
+    },
+    {
+      "nombre": "Tim",
+      "apellidos": "Cook",
+      "email": "timcook@gmail.com",
+      "telefono": 6548121,
+      "twitter": "TimCook",
+      "facebook": "TimCook",
+      "avatar": "",
+      "id": 6
     }
   ]
 }

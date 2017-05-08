@@ -15,3 +15,15 @@ input.ng-touched.ng-valid{
     color: red;
     margin-bottom: 20px;
 }
+
+.avatar{
+    text-align: center;
+}
+
+img{
+    border-radius: 10px;
+}
+
+.boton{
+    text-align: center;
+}
