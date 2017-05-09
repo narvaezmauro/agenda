@@ -14,11 +14,11 @@
 
     <!--Redes sociales-->
 
-    <button type="button" (click)="notificarFacebook()">
+    <button type="button" (click)="notificarFacebook()" class="boton-red-social">
          <i class="fa fa-facebook-square" aria-hidden="true"></i>
     </button>
 
-    <button type="button" (click)="notificarTwitter()">
+    <button type="button" (click)="notificarTwitter()" class="boton-red-social">
          <i class="fa fa-twitter-square" aria-hidden="true"></i>
     </button>
 
@@ -30,5 +30,8 @@
 
     <span>{{contacto?.telefono}} </span>
     
-     
+    <!-- Botón de eliminar contacto -->
+     <button type="button" (click)="notificarEliminacion()" class="u-full-width">Eliminar</button>
+
+
 </div>

@@ -1,4 +1,4 @@
-button{
+.boton-red-social{
     font-size: 32px;
     padding: 0;
     margin: 0;
@@ -6,10 +6,14 @@ button{
 
 }
 
-button:hover{
+.boton-red-social:hover{
     color: blue;
 }
 
 div{
     text-align: center;
+}
+
+img{
+    border-radius: 10px;
 }
