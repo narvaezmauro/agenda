@@ -23,6 +23,11 @@ var nuevo_contacto_component_1 = require("./nuevo-contacto/nuevo-contacto.compon
 var app_routing_module_1 = require("./app-routing.module");
 var contactos_resolve_service_1 = require("./servicios/contactos-resolve.service");
 var direcciones_1 = require("./configuracion/direcciones");
+var ejemplos_observables_component_1 = require("./ejemplos/ejemplos-observables.component");
+var ejemplos_pipe_component_1 = require("./ejemplos/ejemplos-pipe.component");
+var ordenar_pipe_1 = require("./pipes/ordenar.pipe");
+var ejemplos_directivas_directive_1 = require("./ejemplos/ejemplos-directivas.directive");
+var ejemplos_directivas_component_1 = require("./ejemplos/ejemplos-directivas.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -33,8 +38,8 @@ AppModule = __decorate([
         imports: [
             platform_browser_1.BrowserModule,
             forms_1.FormsModule,
-            http_1.HttpModule,
-            app_routing_module_1.AppRoutingModule
+            http_1.HttpModule, http_1.JsonpModule,
+            app_routing_module_1.AppRoutingModule,
         ],
         declarations: [
             app_component_1.AppComponent,
@@ -46,7 +51,13 @@ AppModule = __decorate([
             ejemplos_inyeccion_componentes_1.EjemplosInyeccionComponent,
             formulario_contacto_component_1.FormularioContactoComponent,
             mis_contactos_component_1.MisContactosComponent,
-            nuevo_contacto_component_1.NuevoContactoComponent
+            nuevo_contacto_component_1.NuevoContactoComponent,
+            ejemplos_observables_component_1.EjemplosObservablesComponent,
+            ejemplos_observables_component_1.EjemplosObservablesWikipediaComponent,
+            ejemplos_pipe_component_1.EjemplosPipeComponent,
+            ordenar_pipe_1.OrdenarPipe,
+            ejemplos_directivas_directive_1.EjemplosDirectivasAtributoDirective,
+            ejemplos_directivas_component_1.EjemplosDirectivasComponent,
         ],
         providers: [
             contactos_service_1.ContactosService,

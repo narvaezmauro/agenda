@@ -1,7 +1,7 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule }   from '@angular/forms';
-import { HttpModule }    from '@angular/http';
+import { HttpModule, JsonpModule } from '@angular/http';
 
 import { AppComponent }                 from './app.component';
 import { CajaComponent }                from './ejemplos/caja.component';
@@ -18,6 +18,12 @@ import { NuevoContactoComponent }       from './nuevo-contacto/nuevo-contacto.co
 import { AppRoutingModule }             from './app-routing.module';
 import { ContactosResolve } from './servicios/contactos-resolve.service';
 import { Direcciones, ProveedorDirecciones } from './configuracion/direcciones';
+import { EjemplosObservablesComponent, EjemplosObservablesWikipediaComponent } from './ejemplos/ejemplos-observables.component';
+import { Observable } from 'rxjs/Observable';
+import { EjemplosPipeComponent } from './ejemplos/ejemplos-pipe.component';
+import { OrdenarPipe } from './pipes/ordenar.pipe';
+import { EjemplosDirectivasAtributoDirective } from './ejemplos/ejemplos-directivas.directive';
+import { EjemplosDirectivasComponent } from './ejemplos/ejemplos-directivas.component';
 
 
 
@@ -25,8 +31,9 @@ import { Direcciones, ProveedorDirecciones } from './configuracion/direcciones';
   imports: [ // metemos todos los módulos que necesita mi app
     BrowserModule,
     FormsModule,
-    HttpModule,
-    AppRoutingModule ],
+    HttpModule, JsonpModule,
+    AppRoutingModule,
+     ],
   declarations: [ // metemos todos los componenetes, directivas y pipes
     AppComponent,
     CajaComponent,
@@ -37,7 +44,13 @@ import { Direcciones, ProveedorDirecciones } from './configuracion/direcciones';
     EjemplosInyeccionComponent,
     FormularioContactoComponent,
     MisContactosComponent,
-    NuevoContactoComponent
+    NuevoContactoComponent,
+    EjemplosObservablesComponent,
+    EjemplosObservablesWikipediaComponent,
+    EjemplosPipeComponent,
+    OrdenarPipe,
+    EjemplosDirectivasAtributoDirective,
+    EjemplosDirectivasComponent,
      ],
   providers: [ // metemos los servicios
     ContactosService,   

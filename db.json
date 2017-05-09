@@ -56,6 +56,36 @@
       "facebook": "TimCook",
       "avatar": "",
       "id": 6
+    },
+    {
+      "nombre": "Rober",
+      "apellidos": "Moreno",
+      "email": "rober@babel.es",
+      "telefono": 654891475,
+      "twitter": "RoberMoreno",
+      "facebook": "RoberMoreno",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/thomasgeisen/128.jpg\n",
+      "id": 7
+    },
+    {
+      "nombre": "Blanca",
+      "apellidos": "Romero",
+      "email": "blanca@babel.es",
+      "telefono": 618752346,
+      "twitter": "BlancaRomero",
+      "facebook": "BlancaRomero",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/smalonso/128.jpg\n",
+      "id": 8
+    },
+    {
+      "nombre": "Esteban",
+      "apellidos": "Alzate",
+      "email": "esteban@babel.es",
+      "telefono": 615234895,
+      "twitter": "EstebanAlzate",
+      "facebook": "EstebanAlzate",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/tristanlegros/128.jpg\n",
+      "id": 9
     }
   ]
 }
